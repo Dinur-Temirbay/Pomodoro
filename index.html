@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Pomodoro Timer</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>POMODORO</h1>
+
+			<div class="timer">
+				<svg class="progress" width="220" height="220">
+					<circle class="progress-bg" cx="110" cy="110" r="100" />
+					<circle class="progress-bar" cx="110" cy="110" r="100" />
+				</svg>
+				<div id="time">25:00</div>
+			</div>
+
+			<div class="buttons">
+				<button id="start">Start</button>
+				<button id="pause">Pause</button>
+				<button id="reset">Reset</button>
+			</div>
+		</div>
+
+		<audio id="alarm" src="sound.mp3"></audio>
+		<script src="script.js"></script>
+	</body>
+</html>

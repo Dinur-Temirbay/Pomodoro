@@ -1,0 +1,27 @@
+{
+	"name": "pomodoro",
+	"version": "1.0.0",
+	"main": "main.js",
+	"scripts": {
+		"start": "electron .",
+		"dist": "electron-builder"
+	},
+	"build": {
+		"appId": "com.yourname.pomodoro",
+		"linux": {
+			"target": [
+				"AppImage",
+				"deb"
+			]
+		},
+		"win": {
+			"target": [
+				"nsis"
+			]
+		}
+	},
+	"devDependencies": {
+		"electron": "^39.2.6",
+		"electron-builder": "^26.0.12"
+	}
+}

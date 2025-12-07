@@ -1,0 +1,56 @@
+body {
+	margin: 0;
+	background: #121212;
+	color: #fff;
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.container {
+	text-align: center;
+}
+
+.timer {
+	position: relative;
+	width: 220px;
+	height: 220px;
+	margin: 20px auto;
+}
+
+#time {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 48px;
+}
+
+.progress-bg {
+	fill: none;
+	stroke: #333;
+	stroke-width: 10;
+}
+
+.progress-bar {
+	fill: none;
+	stroke: #ff4f4f;
+	stroke-width: 10;
+	stroke-dasharray: 628;
+	stroke-dashoffset: 0;
+	transform: rotate(-90deg);
+	transform-origin: center;
+}
+
+button {
+	padding: 10px 20px;
+	margin: 5px;
+	border: none;
+	background: #ff4f4f;
+	color: white;
+	font-size: 16px;
+	border-radius: 5px;
+	cursor: pointer;
+}
